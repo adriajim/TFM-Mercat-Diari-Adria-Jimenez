@@ -20,7 +20,7 @@ def pie_plot_tec(database, fecha, hora):
     for i in tecnologies:
         for s in venta_asc:
             if i==s[4]:
-                venta_acu[tecnologies.index(i)]=+s[2]
+                venta_acu[tecnologies.index(i)]+=s[2]
             else:
                 pass
                     
